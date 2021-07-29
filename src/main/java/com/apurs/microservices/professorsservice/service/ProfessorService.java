@@ -12,4 +12,6 @@ public interface ProfessorService {
 	public abstract ProfessorDTO insert(ProfessorCreateDTO professor);
 	public abstract ProfessorDTO update(ProfessorUpdateDTO professor);
 	public abstract boolean delete(Integer id);
+	
+	public abstract List<ProfessorDTO> findAllByCourseId(Integer courseId);
 }
